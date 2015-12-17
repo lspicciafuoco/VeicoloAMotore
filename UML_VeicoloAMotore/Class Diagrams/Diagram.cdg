@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Diagram">
+  <ClassDiagramComponents>
+    <Class name="VeicoloAMotore" package="" visibility="public" xPosition="183.0" yPosition="108.0">
+      <Fields>
+        <Field name="stato" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="avviaMotore" returnType="void" visibility="public"/>
+        <Method name="mostraStato" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Automobile" package="" visibility="public" xPosition="447.0" yPosition="248.0">
+      <Fields>
+        <Field name="colore" type="String" visibility="private"/>
+        <Field name="marca" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="colore"/>
+          <Argument type="String" name="marca"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Automobile" target="VeicoloAMotore"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
